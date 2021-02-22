@@ -1,0 +1,6 @@
+
+" nerd tree 
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <F3> :NERDTree<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
+nnoremap <F3>:NERDTreeFind<CR>

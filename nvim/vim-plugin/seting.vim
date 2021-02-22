@@ -38,9 +38,24 @@ Plug '~/my-prototype-plugin'
 Plug 'vim-airline/vim-airline'
 
 " youcomleteme 
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 
+" gruvbox  
 Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 
+" syntastic chek 
+Plug 'scrooloose/syntastic'
+
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+" vim Icon
+Plug 'ryanoasis/vim-devicons'
+
+" indent line
+Plug 'yggdroot/indentline'
+
 " Initialize plugin system
+
 call plug#end()

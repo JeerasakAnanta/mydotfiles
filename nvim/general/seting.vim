@@ -37,6 +37,10 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 
+set noswapfile  
+
+" ===================================================================================================================
+"
 " themt 
 " important!!
 set termguicolors
@@ -54,3 +58,13 @@ let g:gruvbox_material_background = 'hard'
 
 colorscheme gruvbox-material
 
+
+" check syntax 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

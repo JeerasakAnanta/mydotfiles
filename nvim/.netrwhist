@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/game/.config/i3'
+let g:netrw_dirhist_5='/home/game/.config'
+let g:netrw_dirhist_4='/home/game/.oh-my-zsh/custom'
+let g:netrw_dirhist_3='/home/game/.oh-my-zsh/custom/plugins'
+let g:netrw_dirhist_2='/home/game/.oh-my-zsh/custom'
+let g:netrw_dirhist_1='/home/game/.oh-my-zsh'
