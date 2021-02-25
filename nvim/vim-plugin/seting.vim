@@ -56,6 +56,12 @@ Plug 'ryanoasis/vim-devicons'
 " indent line
 Plug 'yggdroot/indentline'
 
+"comment 
+Plug 'tomtom/tcomment_vim'
+
+" auto {} 90 " "  
+Plug 'jiangmiao/auto-pairs'
+
 " Initialize plugin system
 
 call plug#end()
