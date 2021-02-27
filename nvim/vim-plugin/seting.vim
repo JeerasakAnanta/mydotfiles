@@ -62,6 +62,11 @@ Plug 'tomtom/tcomment_vim'
 " auto {} 90 " "  
 Plug 'jiangmiao/auto-pairs'
 
+
+" git line 
+Plug 'airblade/vim-gitgutter'
+
+
 " Initialize plugin system
 
 call plug#end()
