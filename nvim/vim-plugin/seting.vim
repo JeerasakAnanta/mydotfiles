@@ -66,6 +66,19 @@ Plug 'jiangmiao/auto-pairs'
 " git line 
 Plug 'airblade/vim-gitgutter'
 
+" project
+Plug 'mhinz/vim-startify'
+
+" " ''" 
+Plug 'tpope/vim-surround'
+
+" vim pop-up termail
+Plug 'voldikss/vim-floaterm'
+
+"vim telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Initialize plugin system
 
