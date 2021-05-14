@@ -71,6 +71,8 @@ Plug 'tpope/vim-surround'
 " vim pop-up termail
 Plug 'voldikss/vim-floaterm'
 
+
+Plug 'valloric/youcompleteme'
 " Initialize plugin system
 
 call plug#end()
