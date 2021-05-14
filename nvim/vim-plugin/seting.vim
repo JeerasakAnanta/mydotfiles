@@ -46,10 +46,6 @@ Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 " syntastic chek 
 Plug 'scrooloose/syntastic'
 
-" Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-
 " vim Icon
 Plug 'ryanoasis/vim-devicons'
 
@@ -74,11 +70,6 @@ Plug 'tpope/vim-surround'
 
 " vim pop-up termail
 Plug 'voldikss/vim-floaterm'
-
-"vim telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 
 " Initialize plugin system
 
