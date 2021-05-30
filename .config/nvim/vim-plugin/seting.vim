@@ -13,7 +13,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Multiple Plug commands can be written in a single line using | separators
-"qPlug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 
 " On-demand loading
@@ -32,8 +32,6 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" Unmanaged plugin (manually installed and updated)
-Plug '~/my-prototype-plugin'
 
 
 " vim airline  
@@ -73,11 +71,19 @@ Plug 'voldikss/vim-floaterm'
 
 "Plug 'ycm-core/YouCompleteMe'
 "
+"vim plueing  LSP
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
+Plug 'majutsushi/tagbar'
+
+Plug 'honza/vim-snippets'
+
+"qqPlug 'sirver/ultisnips'
+":Pqq
 
 " Initialize plugin system
 
