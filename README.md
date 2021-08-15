@@ -20,7 +20,7 @@ https://github.com/adi1090x/polybar-themes
 ### wallpappers
 
 ```
-git clone https://github.com/makccr/wallpapers
+git clone https://github.com/makccr/wallpapers`
 ```
 ### spacevim 
 ```
