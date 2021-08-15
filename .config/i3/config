@@ -20,7 +20,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 # i3wm keymap alt
 
-    set $mod Mod1
+    set $mod Mod4
 
 
 # set default desktop layout (default is tiling)
@@ -76,7 +76,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+q kill
@@ -207,8 +207,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --grayblocks
-
+exec_always --no-startup-id  $HOME/.config/polybar/launch.sh --blocks 
+ 
 
 # display mointer 
 #exec i3 --force-xinerama -V >>~/.i3/i3log 2>&1
@@ -218,3 +218,6 @@ bindsym $mod+p move workspace to output right
 
 # exec [--no-startup-id] <command>
 exec --no-startup-id xrandr  --output DP1 --auto --right-of  eDP1
+
+# wallpapers
+exec --no-startup-id  feh --randomize --bg-scale ~/Pictures/wallpapers/wallpapers/animals/*
