@@ -12,22 +12,29 @@ def is_tools(name):
 
 def install(name):
     os.system("sudo apt install"+ name)
-    
+
 def main():
     print("=============================================")
     print("|                install                    |")
     print("=============================================")
 
     if not os.geteuid() == 0:
-        sys.exit("\nOnly root can run this script\n")
-    
-    name = ["git", "python3", "efh", ""]
-    for i in name:
-        if(is_tools(i) != True):
-            install(i)
-        else:
-            print(i + "is in install :)")
-   
+        while(True):
+
+            print("contnunt install y:N",end=" >")
+            inputin = input()
+            if(inputin == "y"):
+                os.system("sudo -i ")
+            if(inputin == "N"):
+                break
+    else:
+        name = ["git", "python3", "efh", "neovim"]
+        for i in name:
+            if(is_tools(i) != True):
+                install(i)
+            else:
+                print(i + "is in install :)")
+
 if __name__ == '__main__':
     main()
 
