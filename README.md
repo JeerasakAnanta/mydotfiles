@@ -6,7 +6,6 @@ My dotfiles is  backup
 - nvim 
 - feh
 - polybar
-- 
 
 ## add ppa  i3-wm on ubuntu 21.04 
 ```
