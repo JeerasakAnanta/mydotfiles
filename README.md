@@ -41,4 +41,10 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger
 
 ```
 
+### add paa alacritty termail 
+
+```
+sudo add-apt-repository ppa:mmstick76/alacritty
+sudo apt install alacritty
+```
 
