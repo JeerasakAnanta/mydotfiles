@@ -48,3 +48,7 @@ sudo add-apt-repository ppa:mmstick76/alacritty
 sudo apt install alacritty
 ```
 
+### terminator-themes
+```
+https://github.com/EliverLara/terminator-themes
+```
