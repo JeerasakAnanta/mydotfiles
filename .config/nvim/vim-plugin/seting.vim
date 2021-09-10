@@ -41,7 +41,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 
 " syntastic chek 
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 
 " vim Icon
 Plug 'ryanoasis/vim-devicons'
@@ -51,10 +51,6 @@ Plug 'yggdroot/indentline'
 
 "comment 
 Plug 'tomtom/tcomment_vim'
-
-" auto {} 90 " "  
-Plug 'jiangmiao/auto-pairs'
-
 
 " git line 
 Plug 'airblade/vim-gitgutter'
@@ -68,23 +64,9 @@ Plug 'tpope/vim-surround'
 " vim pop-up termail
 Plug 'voldikss/vim-floaterm'
 
-
-"Plug 'ycm-core/YouCompleteMe'
-"
-"vim plueing  LSP
-" Plug 'prabirshrestha/vim-lsp'
-" Plug 'mattn/vim-lsp-settings'
-
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
 Plug 'majutsushi/tagbar'
 
-Plug 'honza/vim-snippets'
 
-"qqPlug 'sirver/ultisnips'
-
-" If you don't have nodejs and yarn
 " use pre build, add 'vim-plug' to the filetype list so vim-plug can update this plugin
 " see: https://github.com/iamcco/markdown-preview.nvim/issues/50
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -94,12 +76,24 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 "nvim 0.5 lsp
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'kabouzeid/nvim-lspinstall'
+
 
 " nvim-telescope 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+
+" find file 
+Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
+Plug 'nvim-lua/completion-nvim'
+
+Plug 'prabirshrestha/vim-lsp'
 
 
 " Initialize plugin system
