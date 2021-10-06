@@ -52,3 +52,8 @@ sudo apt install alacritty
 ```
 https://github.com/EliverLara/terminator-themes
 ```
+
+### xcwd - X current working directory
+```
+sudo apt install xcwd
+```
