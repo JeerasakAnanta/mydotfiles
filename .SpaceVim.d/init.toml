@@ -80,16 +80,19 @@ auto_completion_return_key_behavior = "smart"
 auto_completion_tab_key_behavior = "smart"
 auto_completion_enable_snippets_in_popup = true
 
+# shel
 [[layers]]
 name = 'shell'
 default_position = 'top'
 default_height = 30
 
 [[layers]]
-name = "denite"
+  name = "denite"
 
+
+# git
 [[layers]]
-name = 'git'
+  name = 'git'
 
 # VersionControl
 #Show a diff using Vim its sign column
@@ -99,11 +102,16 @@ name = 'VersionControl'
 
 # Fuzzy finder
 [[layers]]
-name = "unite"
+  name = "unite"
 
-#=======================================================
+# format
+[[layers]]
+  name = "format"
+  format_on_save = true
+
+#=============================================================================
 #      programimg lang
-#=======================================================
+#=============================================================================
 
 # bash 
 [[layers]]
@@ -111,23 +119,73 @@ name = "lang#sh"
 
 # c++ 
 [[layers]]
-name = 'lang#c'
-name = "format"
-enable_clang_syntax_highlight = true
+  name = 'lang#c'
+  enable_clang_syntax_highlight = true
+  format_on_save = true
+  cpp_file_head=[
+    "#include bits/stdc++.h"
+  ]
 
 # code format
 [[layers]]
-name = "format"
+  name = "format"
 
 # python3 
 [[layers]]
-name = "lang#python"
+  name = "lang#python"
+  python_file_head = [
+    "#!/usr/bin/python3",
+    "# -*- coding: utf-8 -*-",
+    "# dev by ghostrecon"
+  ]
 
 # assembly 
 [[layers]]
 name = "lang#assembly"
 
+
+# java
+[[layers]]
+  name = "lang#java"
+
+# javascript
+[[layers]]
+  name = "lang#javascript"
+
+# html
+[[layers]]
+  name = "lang#html"
+  emmet_leader_key = "<C-e>"
+  emmet_filetyps = ['html']
+
+
+# ruby
+[[layers]]
+  name = "lang#ruby"
+  ruby_file_head = [
+      '#!/usr/bin/ruby -w',
+      '# -*- coding: utf-8 -*-',
+      '',
+      ''
+  ]
+
+# php 
+[[layers]]
+  name = "lang#php"
+
+[[custom_plugins]]
+    repo = "lilydjwg/colorizer"
+    merged = true
+    
+
+#=============================================================================
 # This is an example for adding custom plugins lilydjwg/colorizer
+#=============================================================================
+
+# debug
+
+[[layers]]
+  name = "debug"
 
 #UI
 [[layers]]
@@ -146,13 +204,19 @@ name = "ui"
 
 # spacevim lsp 
 [[layers]]
-name = "lsp"
-
-filetypes = [
-	"python"
-]
+  name = "lsp"
+  filetypes = [
+    "python",
+    "html",
+    "css"
+  ]
 
 #  hack
 [[layers]]
 name = "lang#hack"
+
+
+[[layers]]
+  name = "colorscheme"
+
 
