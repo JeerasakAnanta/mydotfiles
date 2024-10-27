@@ -19,6 +19,7 @@ plugins=(
     zsh-syntax-highlighting
     node
     npm
+    poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -38,9 +39,10 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias vim='nvim'
+alias lg='lazygit'
 
 #update System  package pacman and  arch linux  user repo
-alias update='sudo pacman -Syu && sudo yay -Syu'
+alias update='sudo pacman -Syu && yay -Syu'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
