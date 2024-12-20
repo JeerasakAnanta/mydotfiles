@@ -31,8 +31,10 @@ def main():
     
     # call function git clone 
     
-    # git_clone("https://github.com/ohmyzsh/ohmyzsh.git", "~/.oh-my-zsh")
+    git_clone("https://github.com/ohmyzsh/ohmyzsh.git", "~/.oh-my-zsh")
     
+    
+
     
 if __name__ == "__main__":
     main()
