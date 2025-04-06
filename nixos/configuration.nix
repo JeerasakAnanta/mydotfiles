@@ -1,3 +1,7 @@
+#=======================================================================
+# 			My Nix Os configgureation 
+#				Date 07.04.2025
+#=======================================================================
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
@@ -87,8 +91,28 @@
     ];
   };
 
+
+  # front 
+  fonts.packages = with pkgs; [
+  noto-fonts
+  noto-fonts-cjk-sans
+  noto-fonts-emoji
+  liberation_ttf
+  fira-code
+  fira-code-symbols
+  mplus-outline-fonts.githubRelease
+  dina-font
+  proggyfonts
+];
+
+  # Hyperland
+  programs.hyprland.enable = true;
+
   # Install firefox.
   programs.firefox.enable = true;
+
+  #  Waybar 
+  programs.waybar.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -102,11 +126,29 @@
 	docker-compose  # docker compose 
 	ctop 		# Mange docker
 
-	btop
+	btop		# btop 
 
-	wget 
-	git
+	zsh 		# zsh
+	oh-my-zsh 	# oh my zsh 
+	wget		# wget 
+	git 		# git
+
+	kitty		# kitty - The fast, feature rich terminal emulator
+	waybar 		# 
+	bemenu 		# 
+	fuzzel 		# 
+	tofi		#  
+
+	wofi 		# 
+	dolphin 	# 
+
+	gcc 		# c
+
 ];
+
+
+	environment.shells = with pkgs; [ zsh ];
+
 
 	# NIXOS 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
